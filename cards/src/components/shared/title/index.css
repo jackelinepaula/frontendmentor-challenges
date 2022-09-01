@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Big+Shoulders+Display:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
+
+.title{
+    font-family:'Big Shoulders Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: hsl(0, 0%, 95%);
+}

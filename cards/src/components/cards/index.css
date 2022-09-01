@@ -6,8 +6,22 @@
 .container{
     display: flex;
     flex-direction: row;
-    width: 850px;
+    width: 800px;
     height: 450px;
-    border: 0.5px solid #141414;
     margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+@media (max-width:799px) {
+    .container{
+        flex-direction: column;
+        width: 375px;
+        height: min-content;
+        margin: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
 }

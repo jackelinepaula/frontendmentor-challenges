@@ -30,7 +30,9 @@ class Cards extends React.Component {
                 {this.state.dado.map((car) =>
                     <Card img_src={car.img_src}
                         title={car.title}
-                        description={car.description} />
+                        description={car.description}
+                        color={car.color}
+                        alt={car.alt}/>
                 )}
             </div>
         )

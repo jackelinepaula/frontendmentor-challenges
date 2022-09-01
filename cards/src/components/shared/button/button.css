@@ -1,18 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
+@import url(https://fonts.googleapis.com/css?family=Lexend+Deca:100,200,300,regular,500,600,700,800,900);
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
 }
 
 .button{
+    font-family: 'Lexend Deca';
     outline: none;
     background: none;
-    border: 1px solid #fff;
+    border: 2px solid hsl(0, 0%, 95%);
     border-radius: 20px;
-    width: 180px;
+    width: 120px;
     height: 40px;
-    color: #fff;
+    color: hsl(0, 0%, 95%);
     cursor: pointer;
+}
+
+.button:hover{
+    color: #2c2c2c;
+    font-weight: 600;
+    background: hsl(0, 0%, 95%);
 }
