@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import './card.css'
 
 import Title from "../../shared/title";
