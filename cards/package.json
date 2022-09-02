@@ -12,7 +12,7 @@
     "web-vitals": "^2.1.4"
   },
   
-  "homepage": "https://jackelinepaula.github.io/frontendmentor-challenges/cards",
+  "homepage": "https://jackelinepaula.github.io/cards",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
