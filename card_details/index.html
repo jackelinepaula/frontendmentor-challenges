@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <title>Card Details</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="card">
+            <div class="card-front">
+                <div class="cardtexts">
+                    <p class="number-p" id="number-p">0000 0000 0000 0000</p>
+                    <div>
+                        <p class="name" id="name">Jackeline Paula</p>
+                        <p class="exp" id="exp"><span id="mm-card">00</span>/<span id="yy-card">00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <p class="card-cvc" id="card-cvc">000</p>
+            </div>
+        </div>
+        <form action="javascript:void(0)" class="form">
+            <label for="cardholdername">CardHolder Name</label>
+            <input type="text" name="cardholdername" id="cardholdername" placeholder="e.g. Jackeline Paula"
+                onkeyup="getText()">
+            <span class="cardholdername" id="tip">Can't be blanck</span>
+            <label for="cardnumber">Card Number</label>
+            <input type="text" name="cardnumber" id="cardnumber" placeholder="e.g 1234 5678 9123 0000" maxlength="19" onkeyup="getCardNumber()">
+            <span class="cardnumber" id="tip">Can't be blanck</span>
+            <div>
+                <fieldset class="exp">
+                    <label for="exp">EXP.DATE(MM/YY)</label><br>
+                    <input type="text" name="mm" id="mm" placeholder="MM" onkeyup="getMonth()" maxlength="2">
+                    <input type="text" name="yy" id="yy" placeholder="YY" onkeyup="getYear()" maxlength="2">
+                    <span class="mm yy" id="tip">Can't be blanck</span>
+                </fieldset>
+                <fieldset class="cvc">
+                    <label for="cvc">CVC</label><br>
+                    <input type="text" name="cvc-in" id="cvc-in" placeholder="123" onkeyup="getCVC()" maxlength="3">
+                    <span class="cvc-in" id="tip">Can't be blanck</span>
+                </fieldset>
+            </div>
+            <div class="btn">
+                <button id="confirm" class="confirm">Confirmar</button>
+            </div>
+
+            <!-- Div animação -->
+            <div class="after"></div>
+        </form>
+
+        <div class="message-container">
+            <img src="img/icon-complete.svg" alt="">
+            <h3 class="msg">Thank You!</h3>
+            <p class="msg-p">We've added your card details</p>
+            <input id="msg-btn" class="msg-btn" type="submit" value="Continue" onclick="reload()">
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
